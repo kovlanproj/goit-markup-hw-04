@@ -1,0 +1,108 @@
+/* палитра цветов
+#757575 цвет текста
+#212121 цвет заголовков
+#ffffff цвет фона
+#F5F4FA доп цвет фона
+#2196F3 акцент
+#2F303A фон героя
+#000000 цвет лого
+rgba(255, 255, 255, 0.6) цвет адреса в футере
+*/
+
+/* назначениие переменных */
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --hero-color: #2F303A;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --bcg-color: #ffffff;
+    --secondary-bcg-color: #F5F4FA;
+    --logo-color: #000000;
+}
+
+body {
+    background-color: var(--bcg-color);
+    color: var(--primary-text-color);
+}
+
+/* класс убирает стилизацию списков */
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+    color: var(--title-text-color);
+}
+
+/* хедер */
+.logo span {
+    color: var(--accent-color);
+}
+
+.logo {
+    color: var(--logo-color);
+}
+
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus, 
+.header-contacts .link:hover, 
+.header-contacts .link:focus {
+    color: var(--accent-color);
+}
+
+.header-contacts .link{
+    color: var(--primary-text-color);
+}
+
+/* герой */
+.hero {
+background-color: var(--hero-color);
+}
+
+.hero-title {
+    color: var(--bcg-color);
+}
+.hero-button {
+    background-color: var(--accent-color);
+    color: var(--bcg-color);
+}
+
+/* преимущества */
+.features-title {
+color: var(--title-text-color);
+}
+
+.footer {
+background-color: var(--hero-color);
+}
+
+.adress {
+    color: var(--bcg-color);
+}
+
+.footer-contact {
+    color: var(--footer-contacts-color);
+}
+
+.filter-button {
+    background-color: var(--secondary-bcg-color);
+    color: var(--title-text-color);
+}
+
+.filter-button.active {
+    background-color: var(--accent-color);
+    color: var(--bcg-color);
+}
+
+.portfolio h2 {
+    color: var(--title-text-color);
+}
