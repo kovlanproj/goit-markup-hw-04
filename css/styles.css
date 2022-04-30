@@ -179,7 +179,8 @@ background-color: var(--hero-color);
     color: var(--bcg-color);
 }
 
-.filter-button {
+.filter-button,
+.hero-button {
     cursor: pointer;
 }
 
