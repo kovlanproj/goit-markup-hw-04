@@ -183,6 +183,7 @@ ul {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0;
 
   background-color: var(--accent-color);
   color: var(--bcg-color);
@@ -308,7 +309,7 @@ ul {
 .filter-button {
   padding: 6px 22px;
   border-radius: 4px;
-  border-color: transparent;
+  border: 0;
 
   background-color: var(--secondary-bcg-color);
   color: var(--title-text-color);
