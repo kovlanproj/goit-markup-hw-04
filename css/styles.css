@@ -80,11 +80,13 @@ ul {
 }
 
 /* хедер */
+.site-header {
+  border-bottom: 1px solid var(--boeder-color);
+}
+
 .header-nav {
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid var(--boeder-color);
 }
 
 .logo {
@@ -133,6 +135,10 @@ ul {
   margin-left: 50px;
 }
 
+.features > .list-item {
+  width: 270px;
+}
+
 .list-item:not(:first-child) {
   margin-left: 30px;
 }
@@ -149,6 +155,11 @@ ul {
 .header-contacts {
   display: flex;
   margin-left: auto;
+}
+
+.header-email,
+.header-tel {
+  font-weight: 500;
 }
 
 .header-contacts .link {
@@ -287,6 +298,7 @@ ul {
 
 .footer-contacts {
   color: var(--footer-contacts-color);
+  display: block;
 }
 
 /* ------------------------------------------------------ */
