@@ -21,6 +21,7 @@ rgba(255, 255, 255, 0.6) цвет адреса в футере
   --logo-color: #000000;
   --boeder-color: #ececec;
   --portfolio-card-border-color: #eeeeee;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -143,6 +144,11 @@ ul {
   margin-left: 30px;
 }
 
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .header-contacts .link:hover,
@@ -159,6 +165,9 @@ ul {
 
 .header-email,
 .header-tel {
+  display: inline-flex;
+  align-items: center;
+
   font-weight: 500;
 }
 
@@ -172,10 +181,18 @@ ul {
 
 /* герой */
 .hero {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
   background-color: var(--hero-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 }
 
@@ -210,6 +227,20 @@ ul {
 /* преимущества */
 .features {
   display: flex;
+}
+
+.section-features {
+  padding-top: 76p;
+}
+
+.thumb {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+
+  background-color: var(--secondary-bcg-color);
+  border-radius: 4px;
 }
 
 .features-title {
@@ -255,6 +286,10 @@ ul {
   display: flex;
 }
 
+.team-list {
+  justify-content: space-between;
+}
+
 .team .list-item {
   background-color: var(--bcg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -262,19 +297,92 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team p {
-  margin-bottom: 30px;
+.team-list {
+  padding: 16px 32px 30px 32px;
 }
 
 .img {
   display: block;
 }
+.social-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--icon-color);
+}
+
+.social-item:hover {
+  background-color: var(--accent-color);
+  color: var(--bcg-color);
+}
+
+.icon-social {
+  fill: currentColor;
+}
+
+/* Clients list */
+
+.clients-list {
+  display: flex;
+}
+
+.client-item {
+}
+.client-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.client-icon {
+  display: flex;
+  width: 170px;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
 
 /* footer */
-.footer {
+.footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-color);
+}
+
+.footer-socials-div {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer {
+  display: flex;
+}
+
+.social-title {
+  margin-bottom: 20px;
+
+  color: var(--bcg-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.white {
+  color: var(--bcg-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list > li:not(:first-child) {
+  margin-left: 10px;
 }
 
 .logo-footer {
@@ -338,6 +446,8 @@ ul {
 .filter-button:focus {
   background-color: var(--accent-color);
   color: var(--bcg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button,
@@ -355,6 +465,11 @@ ul {
 .portfolio-item {
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title {
