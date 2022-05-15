@@ -234,10 +234,12 @@ ul {
 }
 
 .thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
 
   background-color: var(--secondary-bcg-color);
   border-radius: 4px;
@@ -315,7 +317,8 @@ ul {
   color: var(--icon-color);
 }
 
-.social-item:hover {
+.social-item:hover,
+.social-item:focus {
   background-color: var(--accent-color);
   color: var(--bcg-color);
 }
@@ -347,7 +350,8 @@ ul {
   color: var(--icon-color);
 }
 
-.client-icon:hover {
+.client-icon:hover,
+.client-icon:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
